@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0E0BB8CB21AB9CC4001F70FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BB8CA21AB9CC4001F70FF /* AppDelegate.swift */; };
-		0E0BB8CD21AB9CC4001F70FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BB8CC21AB9CC4001F70FF /* ViewController.swift */; };
 		0E0BB8D021AB9CC4001F70FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0BB8CE21AB9CC4001F70FF /* Main.storyboard */; };
 		0E0BB8D321AB9CC4001F70FF /* WhoLetTheDogsOut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BB8D121AB9CC4001F70FF /* WhoLetTheDogsOut.xcdatamodeld */; };
 		0E0BB8D521AB9CC6001F70FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0BB8D421AB9CC6001F70FF /* Assets.xcassets */; };
 		0E0BB8D821AB9CC6001F70FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0BB8D621AB9CC6001F70FF /* LaunchScreen.storyboard */; };
 		0E0BB8E321AB9CC6001F70FF /* WhoLetTheDogsOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BB8E221AB9CC6001F70FF /* WhoLetTheDogsOutTests.swift */; };
 		0E0BB8EE21AB9CC6001F70FF /* WhoLetTheDogsOutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0BB8ED21AB9CC6001F70FF /* WhoLetTheDogsOutUITests.swift */; };
+		0EDB8C8D21ABBB13005F8A13 /* DogsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C8C21ABBB13005F8A13 /* DogsCollectionViewController.swift */; };
+		0EDB8C8F21ABBCE2005F8A13 /* DogsCollectionViewController+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C8E21ABBCE2005F8A13 /* DogsCollectionViewController+List.swift */; };
+		0EDB8C9221ABC164005F8A13 /* DogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C9121ABC164005F8A13 /* DogCollectionViewCell.swift */; };
+		0EDB8C9421ABC276005F8A13 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C9321ABC276005F8A13 /* Dog.swift */; };
+		0EDB8C9621ABC65E005F8A13 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C9521ABC65E005F8A13 /* Identifiable.swift */; };
+		0EDB8C9821ABC806005F8A13 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C9721ABC806005F8A13 /* Extensions.swift */; };
+		0EDB8C9A21ABCCF3005F8A13 /* DogsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C9921ABCCF3005F8A13 /* DogsListViewModel.swift */; };
+		0EDB8C9C21ABCF87005F8A13 /* DogsCollectionViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8C9B21ABCF87005F8A13 /* DogsCollectionViewController+View.swift */; };
 		27D8FB95CA8581AD9D4B8699 /* Pods_WhoLetTheDogsOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */; };
 		381A3CDA3BC0B60A4E585396 /* Pods_WhoLetTheDogsOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6728CF32DA33E9DBDA9E483 /* Pods_WhoLetTheDogsOutTests.framework */; };
 		8BB836F9D5BE3A90382153A6 /* Pods_WhoLetTheDogsOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B366BC7123EDE8A950064B57 /* Pods_WhoLetTheDogsOutUITests.framework */; };
@@ -40,7 +47,6 @@
 /* Begin PBXFileReference section */
 		0E0BB8C721AB9CC4001F70FF /* WhoLetTheDogsOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoLetTheDogsOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0BB8CA21AB9CC4001F70FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E0BB8CC21AB9CC4001F70FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E0BB8CF21AB9CC4001F70FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E0BB8D221AB9CC4001F70FF /* WhoLetTheDogsOut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhoLetTheDogsOut.xcdatamodel; sourceTree = "<group>"; };
 		0E0BB8D421AB9CC6001F70FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +58,14 @@
 		0E0BB8E921AB9CC6001F70FF /* WhoLetTheDogsOutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhoLetTheDogsOutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E0BB8ED21AB9CC6001F70FF /* WhoLetTheDogsOutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoLetTheDogsOutUITests.swift; sourceTree = "<group>"; };
 		0E0BB8EF21AB9CC6001F70FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EDB8C8C21ABBB13005F8A13 /* DogsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsCollectionViewController.swift; sourceTree = "<group>"; };
+		0EDB8C8E21ABBCE2005F8A13 /* DogsCollectionViewController+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsCollectionViewController+List.swift"; sourceTree = "<group>"; };
+		0EDB8C9121ABC164005F8A13 /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
+		0EDB8C9321ABC276005F8A13 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		0EDB8C9521ABC65E005F8A13 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		0EDB8C9721ABC806005F8A13 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0EDB8C9921ABCCF3005F8A13 /* DogsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListViewModel.swift; sourceTree = "<group>"; };
+		0EDB8C9B21ABCF87005F8A13 /* DogsCollectionViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogsCollectionViewController+View.swift"; sourceTree = "<group>"; };
 		51623C90767DBF0372168163 /* Pods-WhoLetTheDogsOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3DB5259AA18067FBB7B36F /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,13 +130,15 @@
 		0E0BB8C921AB9CC4001F70FF /* WhoLetTheDogsOut */ = {
 			isa = PBXGroup;
 			children = (
+				0EDB8C9021ABC003005F8A13 /* Dogs List */,
 				0E0BB8CA21AB9CC4001F70FF /* AppDelegate.swift */,
-				0E0BB8CC21AB9CC4001F70FF /* ViewController.swift */,
 				0E0BB8CE21AB9CC4001F70FF /* Main.storyboard */,
 				0E0BB8D421AB9CC6001F70FF /* Assets.xcassets */,
 				0E0BB8D621AB9CC6001F70FF /* LaunchScreen.storyboard */,
 				0E0BB8D921AB9CC6001F70FF /* Info.plist */,
 				0E0BB8D121AB9CC4001F70FF /* WhoLetTheDogsOut.xcdatamodeld */,
+				0EDB8C9521ABC65E005F8A13 /* Identifiable.swift */,
+				0EDB8C9721ABC806005F8A13 /* Extensions.swift */,
 			);
 			path = WhoLetTheDogsOut;
 			sourceTree = "<group>";
@@ -143,6 +159,43 @@
 				0E0BB8EF21AB9CC6001F70FF /* Info.plist */,
 			);
 			path = WhoLetTheDogsOutUITests;
+			sourceTree = "<group>";
+		};
+		0EDB8C8921ABB9DF005F8A13 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EDB8C9921ABCCF3005F8A13 /* DogsListViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		0EDB8C8A21ABB9EE005F8A13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EDB8C8C21ABBB13005F8A13 /* DogsCollectionViewController.swift */,
+				0EDB8C8E21ABBCE2005F8A13 /* DogsCollectionViewController+List.swift */,
+				0EDB8C9121ABC164005F8A13 /* DogCollectionViewCell.swift */,
+				0EDB8C9B21ABCF87005F8A13 /* DogsCollectionViewController+View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EDB8C8B21ABB9F4005F8A13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EDB8C9321ABC276005F8A13 /* Dog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EDB8C9021ABC003005F8A13 /* Dogs List */ = {
+			isa = PBXGroup;
+			children = (
+				0EDB8C8B21ABB9F4005F8A13 /* Model */,
+				0EDB8C8A21ABB9EE005F8A13 /* View */,
+				0EDB8C8921ABB9DF005F8A13 /* View Model */,
+			);
+			path = "Dogs List";
 			sourceTree = "<group>";
 		};
 		A3146122A4FA7CFF4E6933E0 /* Frameworks */ = {
@@ -384,7 +437,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0BB8CD21AB9CC4001F70FF /* ViewController.swift in Sources */,
+				0EDB8C9C21ABCF87005F8A13 /* DogsCollectionViewController+View.swift in Sources */,
+				0EDB8C9A21ABCCF3005F8A13 /* DogsListViewModel.swift in Sources */,
+				0EDB8C8D21ABBB13005F8A13 /* DogsCollectionViewController.swift in Sources */,
+				0EDB8C8F21ABBCE2005F8A13 /* DogsCollectionViewController+List.swift in Sources */,
+				0EDB8C9421ABC276005F8A13 /* Dog.swift in Sources */,
+				0EDB8C9821ABC806005F8A13 /* Extensions.swift in Sources */,
+				0EDB8C9221ABC164005F8A13 /* DogCollectionViewCell.swift in Sources */,
+				0EDB8C9621ABC65E005F8A13 /* Identifiable.swift in Sources */,
 				0E0BB8CB21AB9CC4001F70FF /* AppDelegate.swift in Sources */,
 				0E0BB8D321AB9CC4001F70FF /* WhoLetTheDogsOut.xcdatamodeld in Sources */,
 			);
