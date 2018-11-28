@@ -6,9 +6,10 @@ target 'WhoLetTheDogsOut' do
   use_frameworks!
 
   pod 'IQKeyboardManager'
-  pod 'PromiseKit', '~> 6.0'
+  pod 'PromisesSwift', '~> 1.2.4'
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireImage'
+  pod 'ReachabilitySwift'
 
   target 'WhoLetTheDogsOutTests' do
     inherit! :search_paths

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nEj-YL-dnP">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -94,6 +94,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oqi-Oz-LHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-202" y="132"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="hbL-vy-cha">
+            <objects>
+                <viewController id="nEj-YL-dnP" customClass="SignInViewController" customModule="WhoLetTheDogsOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1bf-HO-RQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGh-kc-tL1">
+                                <rect key="frame" x="12" y="604" width="351" height="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="631-sw-IdD">
+                                <rect key="frame" x="12" y="660" width="351" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="19"/>
+                                <state key="normal" title="ENTRAR">
+                                    <color key="titleColor" red="0.41960784309999999" green="0.49803921569999998" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-he-eNd">
+                                <rect key="frame" x="12" y="632" width="351" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="rYf-KH-SOe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41960784313725491" green="0.49803921568627452" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wYO-Nh-eq5" firstAttribute="bottom" secondItem="631-sw-IdD" secondAttribute="bottom" constant="80" id="8gF-hc-bnO"/>
+                            <constraint firstItem="oGh-kc-tL1" firstAttribute="leading" secondItem="wYO-Nh-eq5" secondAttribute="leading" constant="12" id="AuD-q8-bB8"/>
+                            <constraint firstItem="wYO-Nh-eq5" firstAttribute="bottom" secondItem="oGh-kc-tL1" secondAttribute="bottom" constant="150" id="LKQ-Fb-vog"/>
+                            <constraint firstItem="wYO-Nh-eq5" firstAttribute="trailing" secondItem="fhc-he-eNd" secondAttribute="trailing" constant="12" id="Qvn-lq-lTV"/>
+                            <constraint firstItem="fhc-he-eNd" firstAttribute="leading" secondItem="wYO-Nh-eq5" secondAttribute="leading" constant="12" id="UAD-71-RKP"/>
+                            <constraint firstItem="wYO-Nh-eq5" firstAttribute="trailing" secondItem="oGh-kc-tL1" secondAttribute="trailing" constant="12" id="bTz-K7-C5Y"/>
+                            <constraint firstItem="631-sw-IdD" firstAttribute="leading" secondItem="wYO-Nh-eq5" secondAttribute="leading" constant="12" id="gCm-rG-8eg"/>
+                            <constraint firstItem="fhc-he-eNd" firstAttribute="top" secondItem="oGh-kc-tL1" secondAttribute="bottom" constant="4" id="qTK-Iq-jUc"/>
+                            <constraint firstItem="wYO-Nh-eq5" firstAttribute="trailing" secondItem="631-sw-IdD" secondAttribute="trailing" constant="12" id="zJ9-HT-44H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wYO-Nh-eq5"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="631-sw-IdD" id="qck-EO-Ilm"/>
+                        <outlet property="emailTextField" destination="oGh-kc-tL1" id="Yn6-0y-VNV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrP-4k-EVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="-704.18719211822668"/>
         </scene>
     </scenes>
 </document>

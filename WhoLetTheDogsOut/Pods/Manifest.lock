@@ -3,35 +3,35 @@ PODS:
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
   - IQKeyboardManager (6.2.0)
-  - PromiseKit (6.5.3):
-    - PromiseKit/CorePromise (= 6.5.3)
-    - PromiseKit/Foundation (= 6.5.3)
-    - PromiseKit/UIKit (= 6.5.3)
-  - PromiseKit/CorePromise (6.5.3)
-  - PromiseKit/Foundation (6.5.3):
-    - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.5.3):
-    - PromiseKit/CorePromise
+  - PromisesObjC (1.2.4)
+  - PromisesSwift (1.2.4):
+    - PromisesObjC (= 1.2.4)
+  - ReachabilitySwift (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
   - IQKeyboardManager
-  - PromiseKit (~> 6.0)
+  - PromisesSwift (~> 1.2.4)
+  - ReachabilitySwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
     - IQKeyboardManager
-    - PromiseKit
+    - PromisesObjC
+    - PromisesSwift
+    - ReachabilitySwift
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
-  PromiseKit: c609029bdd801f792551a504c695c7d3098b42cd
+  PromisesObjC: 4a3f2e30a0eb793e9bbb32cd367b625d4a14de5a
+  PromisesSwift: 8e1d2cdbc3cafb4f09d4b82df12f645bc19ab64e
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
 
-PODFILE CHECKSUM: 3dddb8a22b08e102937e8302f1a1d6bae83678a3
+PODFILE CHECKSUM: 2f45cdd69420f1367c0e730daccefea694a61e2b
 
 COCOAPODS: 1.5.3
