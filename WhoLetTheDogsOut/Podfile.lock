@@ -3,16 +3,20 @@ PODS:
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
   - IQKeyboardManager (6.2.0)
+  - Nimble (7.3.1)
   - PromisesObjC (1.2.4)
   - PromisesSwift (1.2.4):
     - PromisesObjC (= 1.2.4)
+  - Quick (1.3.2)
   - ReachabilitySwift (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
   - IQKeyboardManager
+  - Nimble
   - PromisesSwift (~> 1.2.4)
+  - Quick
   - ReachabilitySwift
 
 SPEC REPOS:
@@ -20,18 +24,22 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - IQKeyboardManager
+    - Nimble
     - PromisesObjC
     - PromisesSwift
+    - Quick
     - ReachabilitySwift
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   PromisesObjC: 4a3f2e30a0eb793e9bbb32cd367b625d4a14de5a
   PromisesSwift: 8e1d2cdbc3cafb4f09d4b82df12f645bc19ab64e
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
 
-PODFILE CHECKSUM: 2f45cdd69420f1367c0e730daccefea694a61e2b
+PODFILE CHECKSUM: d0a689189e3d8e18c1a50eb5186aaeac5caf4865
 
 COCOAPODS: 1.5.3

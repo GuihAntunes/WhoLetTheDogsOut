@@ -1,0 +1,6 @@
+framework module Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests {
+  umbrella header "Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -37,8 +37,11 @@
 		0EDB8CBD21AF2C63005F8A13 /* SignInRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CBC21AF2C63005F8A13 /* SignInRepository.swift */; };
 		0EDB8CC321AF318A005F8A13 /* SignInViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC221AF318A005F8A13 /* SignInViewController+View.swift */; };
 		0EDB8CC521AF35AB005F8A13 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */; };
+		0EDB8CC721AF3874005F8A13 /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC621AF3874005F8A13 /* SignInViewModelTests.swift */; };
 		27D8FB95CA8581AD9D4B8699 /* Pods_WhoLetTheDogsOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */; };
 		381A3CDA3BC0B60A4E585396 /* Pods_WhoLetTheDogsOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6728CF32DA33E9DBDA9E483 /* Pods_WhoLetTheDogsOutTests.framework */; };
+		8330A618D8D15675EAC84F3D /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B60BFE490B1F0A38F0A80D9 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework */; };
+		8AFDFCD3849A99424A029965 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5302DEA7D31443C60BBCF637 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutUITests.framework */; };
 		8BB836F9D5BE3A90382153A6 /* Pods_WhoLetTheDogsOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B366BC7123EDE8A950064B57 /* Pods_WhoLetTheDogsOutUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,14 +99,21 @@
 		0EDB8CBC21AF2C63005F8A13 /* SignInRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRepository.swift; sourceTree = "<group>"; };
 		0EDB8CC221AF318A005F8A13 /* SignInViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+View.swift"; sourceTree = "<group>"; };
 		0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		0EDB8CC621AF3874005F8A13 /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
+		11BA0D28988FE786F5C60BBF /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44BD33ECC78512F0078D44EB /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B60BFE490B1F0A38F0A80D9 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51623C90767DBF0372168163 /* Pods-WhoLetTheDogsOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5302DEA7D31443C60BBCF637 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOut_WhoLetTheDogsOutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D3DB5259AA18067FBB7B36F /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		61538D79BC3D5C935A5BC1B9 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		86937F6EC65629D3189C7146 /* Pods-WhoLetTheDogsOut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOut.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOut/Pods-WhoLetTheDogsOut.release.xcconfig"; sourceTree = "<group>"; };
-		A4A909E15E9ACEE8935B8F14 /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C17A8FEA118FBC6ECCCC573 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.release.xcconfig"; sourceTree = "<group>"; };
+		B34B9A2E0133B3E8E09CC825 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B366BC7123EDE8A950064B57 /* Pods_WhoLetTheDogsOutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27A85137B5B3BFCAC92E79A /* Pods-WhoLetTheDogsOut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOut/Pods-WhoLetTheDogsOut.debug.xcconfig"; sourceTree = "<group>"; };
 		D6728CF32DA33E9DBDA9E483 /* Pods_WhoLetTheDogsOutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75B3001037505EA44BDE5EA /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F4999792923CB4C290A0A584 /* Pods-WhoLetTheDogsOutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOutTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				381A3CDA3BC0B60A4E585396 /* Pods_WhoLetTheDogsOutTests.framework in Frameworks */,
+				8330A618D8D15675EAC84F3D /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB836F9D5BE3A90382153A6 /* Pods_WhoLetTheDogsOutUITests.framework in Frameworks */,
+				8AFDFCD3849A99424A029965 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +191,7 @@
 			children = (
 				0E0BB8E221AB9CC6001F70FF /* WhoLetTheDogsOutTests.swift */,
 				0E0BB8E421AB9CC6001F70FF /* Info.plist */,
+				0EDB8CC621AF3874005F8A13 /* SignInViewModelTests.swift */,
 			);
 			path = WhoLetTheDogsOutTests;
 			sourceTree = "<group>";
@@ -321,6 +334,8 @@
 				5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */,
 				D6728CF32DA33E9DBDA9E483 /* Pods_WhoLetTheDogsOutTests.framework */,
 				B366BC7123EDE8A950064B57 /* Pods_WhoLetTheDogsOutUITests.framework */,
+				5302DEA7D31443C60BBCF637 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutUITests.framework */,
+				4B60BFE490B1F0A38F0A80D9 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -332,8 +347,12 @@
 				86937F6EC65629D3189C7146 /* Pods-WhoLetTheDogsOut.release.xcconfig */,
 				51623C90767DBF0372168163 /* Pods-WhoLetTheDogsOutTests.debug.xcconfig */,
 				F4999792923CB4C290A0A584 /* Pods-WhoLetTheDogsOutTests.release.xcconfig */,
-				7D3DB5259AA18067FBB7B36F /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */,
-				A4A909E15E9ACEE8935B8F14 /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */,
+				61538D79BC3D5C935A5BC1B9 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.debug.xcconfig */,
+				D75B3001037505EA44BDE5EA /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutUITests.release.xcconfig */,
+				B34B9A2E0133B3E8E09CC825 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.debug.xcconfig */,
+				9C17A8FEA118FBC6ECCCC573 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.release.xcconfig */,
+				11BA0D28988FE786F5C60BBF /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */,
+				44BD33ECC78512F0078D44EB /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -368,6 +387,7 @@
 				0E0BB8DA21AB9CC6001F70FF /* Sources */,
 				0E0BB8DB21AB9CC6001F70FF /* Frameworks */,
 				0E0BB8DC21AB9CC6001F70FF /* Resources */,
+				FD6AC02A542285FFB8C8F695 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,7 +518,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WhoLetTheDogsOutTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,6 +571,38 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoLetTheDogsOut/Pods-WhoLetTheDogsOut-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD6AC02A542285FFB8C8F695 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -590,6 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDB8CC721AF3874005F8A13 /* SignInViewModelTests.swift in Sources */,
 				0E0BB8E321AB9CC6001F70FF /* WhoLetTheDogsOutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,7 +846,7 @@
 		};
 		0E0BB8F621AB9CC6001F70FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51623C90767DBF0372168163 /* Pods-WhoLetTheDogsOutTests.debug.xcconfig */;
+			baseConfigurationReference = B34B9A2E0133B3E8E09CC825 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -815,7 +868,7 @@
 		};
 		0E0BB8F721AB9CC6001F70FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4999792923CB4C290A0A584 /* Pods-WhoLetTheDogsOutTests.release.xcconfig */;
+			baseConfigurationReference = 9C17A8FEA118FBC6ECCCC573 /* Pods-WhoLetTheDogsOut-WhoLetTheDogsOutTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -837,7 +890,7 @@
 		};
 		0E0BB8F921AB9CC6001F70FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D3DB5259AA18067FBB7B36F /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */;
+			baseConfigurationReference = 11BA0D28988FE786F5C60BBF /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -858,7 +911,7 @@
 		};
 		0E0BB8FA21AB9CC6001F70FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A909E15E9ACEE8935B8F14 /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */;
+			baseConfigurationReference = 44BD33ECC78512F0078D44EB /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
