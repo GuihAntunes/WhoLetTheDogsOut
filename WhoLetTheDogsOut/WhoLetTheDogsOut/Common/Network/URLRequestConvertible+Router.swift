@@ -22,6 +22,10 @@ extension CustomRouter {
         urlRequest.httpMethod = method.rawValue
         urlRequest.allHTTPHeaderFields?.updateValue("application/json", forKey: "Content-Type")
         
+        if let token = UserDataManager().getValueString(for: "Token") {
+            urlRequest.allHTTPHeaderFields?.updateValue(token, forKey: "Authorization")
+        }
+        
         return urlRequest
     }
 }

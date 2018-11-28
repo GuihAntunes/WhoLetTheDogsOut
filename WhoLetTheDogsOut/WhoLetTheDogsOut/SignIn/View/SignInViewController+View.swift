@@ -17,18 +17,18 @@ protocol SignInViewControllerPresentable: class {
 
 extension SignInViewController: SignInViewControllerPresentable {
     func startLoading() {
-        
+        print("loader started")
     }
     
     func stopLoading() {
-        
+        print("loader stopped")
     }
     
     func presentHomeScreen() {
-        
+        print("presented")
     }
     
     func presentAlertWith(message: String) {
-        
+        print("alerted")
     }
 }

@@ -15,9 +15,9 @@ protocol SignInDataAccess: class {
 class SignInRepository: SignInDataAccess {
     
     let remoteRepository: SignInService
-    let localRepository: KeychainAccess
+    let localRepository: UserDataManager
     
-    init(remoteRepository: SignInService = SignInService(), localRepository: KeychainAccess = KeychainAccess()) {
+    init(remoteRepository: SignInService = SignInService(), localRepository: UserDataManager = UserDataManager()) {
         self.remoteRepository = remoteRepository
         self.localRepository = localRepository
     }
@@ -38,11 +38,7 @@ class SignInRepository: SignInDataAccess {
     }
     
     private func handleSignInResponse(_ response: SignInResponse) {
-        do {
-           try localRepository.saveToken(response.user?.token ?? "")
-        } catch {
-            print(error.localizedDescription)
-        }
+        localRepository.save(value: response.user?.token ?? "", for: "Token")
     }
     
 }

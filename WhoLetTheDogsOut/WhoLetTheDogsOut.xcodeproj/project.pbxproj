@@ -28,7 +28,6 @@
 		0EDB8CA621AC9302005F8A13 /* DogsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CA521AC9302005F8A13 /* DogsListRouter.swift */; };
 		0EDB8CA821AC9365005F8A13 /* URLRequestConvertible+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CA721AC9365005F8A13 /* URLRequestConvertible+Router.swift */; };
 		0EDB8CAA21AC938D005F8A13 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CA921AC938D005F8A13 /* URLS.swift */; };
-		0EDB8CAE21AC96AA005F8A13 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CAD21AC96AA005F8A13 /* KeychainAccess.swift */; };
 		0EDB8CB121ADFA32005F8A13 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CB021ADFA32005F8A13 /* SignInViewController.swift */; };
 		0EDB8CB321AE1D80005F8A13 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CB221AE1D80005F8A13 /* SignInViewModel.swift */; };
 		0EDB8CB521AE1EFF005F8A13 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CB421AE1EFF005F8A13 /* SignInRouter.swift */; };
@@ -37,6 +36,7 @@
 		0EDB8CBB21AF2BB4005F8A13 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CBA21AF2BB4005F8A13 /* SignInService.swift */; };
 		0EDB8CBD21AF2C63005F8A13 /* SignInRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CBC21AF2C63005F8A13 /* SignInRepository.swift */; };
 		0EDB8CC321AF318A005F8A13 /* SignInViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC221AF318A005F8A13 /* SignInViewController+View.swift */; };
+		0EDB8CC521AF35AB005F8A13 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */; };
 		27D8FB95CA8581AD9D4B8699 /* Pods_WhoLetTheDogsOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */; };
 		381A3CDA3BC0B60A4E585396 /* Pods_WhoLetTheDogsOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6728CF32DA33E9DBDA9E483 /* Pods_WhoLetTheDogsOutTests.framework */; };
 		8BB836F9D5BE3A90382153A6 /* Pods_WhoLetTheDogsOutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B366BC7123EDE8A950064B57 /* Pods_WhoLetTheDogsOutUITests.framework */; };
@@ -87,7 +87,6 @@
 		0EDB8CA521AC9302005F8A13 /* DogsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListRouter.swift; sourceTree = "<group>"; };
 		0EDB8CA721AC9365005F8A13 /* URLRequestConvertible+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequestConvertible+Router.swift"; sourceTree = "<group>"; };
 		0EDB8CA921AC938D005F8A13 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
-		0EDB8CAD21AC96AA005F8A13 /* KeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
 		0EDB8CB021ADFA32005F8A13 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0EDB8CB221AE1D80005F8A13 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		0EDB8CB421AE1EFF005F8A13 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		0EDB8CBA21AF2BB4005F8A13 /* SignInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		0EDB8CBC21AF2C63005F8A13 /* SignInRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRepository.swift; sourceTree = "<group>"; };
 		0EDB8CC221AF318A005F8A13 /* SignInViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+View.swift"; sourceTree = "<group>"; };
+		0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		51623C90767DBF0372168163 /* Pods-WhoLetTheDogsOutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutTests/Pods-WhoLetTheDogsOutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3DB5259AA18067FBB7B36F /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -234,7 +234,7 @@
 			children = (
 				0EDB8CAC21AC9493005F8A13 /* UIExtensions */,
 				0EDB8CAB21AC947F005F8A13 /* Network */,
-				0EDB8CAD21AC96AA005F8A13 /* KeychainAccess.swift */,
+				0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -571,13 +571,13 @@
 				0EDB8C9821ABC806005F8A13 /* UICollectionView+Identifiable.swift in Sources */,
 				0EDB8C9221ABC164005F8A13 /* DogCollectionViewCell.swift in Sources */,
 				0EDB8C9621ABC65E005F8A13 /* Identifiable.swift in Sources */,
-				0EDB8CAE21AC96AA005F8A13 /* KeychainAccess.swift in Sources */,
 				0EDB8CB921AF2B07005F8A13 /* SignInResponse.swift in Sources */,
 				0EDB8CAA21AC938D005F8A13 /* URLS.swift in Sources */,
 				0EDB8CBB21AF2BB4005F8A13 /* SignInService.swift in Sources */,
 				0EDB8CC321AF318A005F8A13 /* SignInViewController+View.swift in Sources */,
 				0EDB8CBD21AF2C63005F8A13 /* SignInRepository.swift in Sources */,
 				0EDB8CA621AC9302005F8A13 /* DogsListRouter.swift in Sources */,
+				0EDB8CC521AF35AB005F8A13 /* UserDataManager.swift in Sources */,
 				0EDB8CB121ADFA32005F8A13 /* SignInViewController.swift in Sources */,
 				0E0BB8CB21AB9CC4001F70FF /* AppDelegate.swift in Sources */,
 				0EDB8CA821AC9365005F8A13 /* URLRequestConvertible+Router.swift in Sources */,
