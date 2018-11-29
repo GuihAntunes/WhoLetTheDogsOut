@@ -16,11 +16,16 @@ class SignInViewModelTests: QuickSpec {
     class SignInDataAccessDummy: SignInDataAccess {
         var signInCalled = false
         var emailInserted: String?
+        var shouldReject = false
         func signInWith(email: String) -> Promise<Bool> {
             return Promise<Bool> { fulfill, reject in
                 self.signInCalled = true
                 self.emailInserted = email
-                fulfill(true)
+                guard self.shouldReject else {
+                    fulfill(true)
+                    return
+                }
+                reject(CustomError.generalError("Returned Error!"))
             }
         }
     }
@@ -62,7 +67,7 @@ class SignInViewModelTests: QuickSpec {
         
         describe("#sign in action") {
             context("when button ENTRAR is clicked", {
-                it("should test the log in action", closure: {
+                it("should test the log in action successful", closure: {
                     subject.signInUserWith(email: "email@email.com")
                     expect(waitForPromises(timeout: 5.0)).to(beTrue())
                     expect(repositoryDummy.emailInserted).to(equal("email@email.com"))
@@ -71,6 +76,19 @@ class SignInViewModelTests: QuickSpec {
                     expect(viewDummy.startLoadingCalled).to(beTrue())
                     expect(viewDummy.stopLoadingCalled).to(beTrue())
                     expect(viewDummy.presentHomeScreenCalled).to(beTrue())
+                    expect(viewDummy.presentAlertWithCalled).to(beFalse())
+                })
+                
+                it("should test the log in action failing", closure: {
+                    repositoryDummy.shouldReject = true
+                    subject.signInUserWith(email: "email@email.com")
+                    expect(waitForPromises(timeout: 5.0)).to(beTrue())
+                    
+                    expect(repositoryDummy.emailInserted).notTo(beNil())
+                    expect(viewDummy.startLoadingCalled).to(beTrue())
+                    expect(viewDummy.stopLoadingCalled).to(beTrue())
+                    expect(viewDummy.presentHomeScreenCalled).to(beFalse())
+                    expect(viewDummy.presentAlertWithCalled).to(beTrue())
                 })
             })
         }
