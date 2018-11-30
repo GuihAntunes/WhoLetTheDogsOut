@@ -25,8 +25,7 @@ extension DogsCollectionViewController: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let cell = collectionView.cellForItem(at: indexPath) as? DogCollectionViewCell {
-            let viewController = BigPhotoViewController()
+        if let cell = collectionView.cellForItem(at: indexPath) as? DogCollectionViewCell, let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BigPhotoViewController") as? BigPhotoViewController {
             viewController.setDogImage(cell.dogImageView?.image ?? UIImage())
             viewController.setNavigationTitle(viewModel.dogsList[indexPath.section].category)
             navigationController?.pushViewController(viewController, animated: true)
@@ -54,6 +53,14 @@ extension DogsCollectionViewController: UICollectionViewDataSource, UICollection
         }
         
         return UICollectionReusableView()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.5
     }
     
 }

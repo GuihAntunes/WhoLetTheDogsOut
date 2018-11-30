@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AlamofireImage
+import SDWebImage
 import Reachability
 
 class DogCollectionViewCell: UICollectionViewCell, Identifiable {
@@ -16,31 +16,24 @@ class DogCollectionViewCell: UICollectionViewCell, Identifiable {
     @IBOutlet weak var dogImageView: UIImageView?
     
     // MARK: - Properties
-    private var imageUrlString = "" {
+    private var imageUrl : URL? {
         didSet {
             downloadImage()
         }
     }
     
-    let imageCache = AutoPurgingImageCache()
-
     // MARK: - Methods
-    func setImageUrlString(_ string: String) {
-        imageUrlString = string
+    func setImageUrlString(_ string: URL) {
+        imageUrl = string
     }
     
     func downloadImage() {
-        guard Reachability()?.isConnected ?? false else {
-            dogImageView?.image = imageCache.image(withIdentifier: imageUrlString)
+        guard let image = SDImageCache.shared().imageFromDiskCache(forKey: imageUrl?.absoluteString) else {
+            dogImageView?.sd_setImage(with: imageUrl)
             return
         }
+        dogImageView?.image = image
         
-        if let url = URL(string: imageUrlString) {
-            dogImageView?.af_setImage(withURL: url, progressQueue: .global(), imageTransition: .noTransition, runImageTransitionIfCached: false, completion: { (image) in
-                self.imageCache.add(image.value ?? UIImage(), withIdentifier: self.imageUrlString)
-                self.dogImageView?.contentMode = .scaleAspectFill
-            })
-        }
     }
     
     override func prepareForReuse() {

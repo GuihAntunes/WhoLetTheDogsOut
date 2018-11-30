@@ -9,19 +9,15 @@ target 'WhoLetTheDogsOut' do
   pod 'IQKeyboardManager'
   pod 'PromisesSwift', '~> 1.2.4'
   pod 'Alamofire', '~> 4.7'
-  pod 'AlamofireImage'
   pod 'ReachabilitySwift'
+  pod 'SDWebImage'
+  pod 'Disk'
 
   target 'WhoLetTheDogsOutTests' do
     inherit! :complete
     # Pods for testing
     pod 'Nimble'
     pod 'Quick'
-  end
-
-  target 'WhoLetTheDogsOutUITests' do
-    inherit! :search_paths
-    # Pods for testing
   end
 
 end

@@ -46,7 +46,7 @@ class DogsListViewModel {
         return dogsList[section].list.count
     }
     
-    func dogUrlString(for indexPath: IndexPath) -> String {
+    func dogUrlString(for indexPath: IndexPath) -> URL {
         return dogsList[indexPath.section].list[indexPath.item]
     }
 }

@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct Dog: Decodable {
+struct Dog: Codable {
     let category: String
-    let list: [String]
+    let list: [URL]
+    
+    var path: String {
+        return "storedDog\(category).json"
+    }
 }

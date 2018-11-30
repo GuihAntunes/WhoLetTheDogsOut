@@ -101,7 +101,7 @@
         <!--Big Photo View Controller-->
         <scene sceneID="l06-e0-BO1">
             <objects>
-                <viewController id="gP6-Oh-ihc" customClass="BigPhotoViewController" customModule="WhoLetTheDogsOut" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="BigPhotoViewController" storyboardIdentifier="BigPhotoViewController" id="gP6-Oh-ihc" customClass="BigPhotoViewController" customModule="WhoLetTheDogsOut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ydw-UO-mu7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
