@@ -18,3 +18,9 @@ extension Identifiable where Self: UICollectionViewCell {
         return String(describing: self)
     }
 }
+
+extension Identifiable where Self: UITableViewCell {
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
+}

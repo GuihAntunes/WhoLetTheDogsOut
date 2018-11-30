@@ -18,6 +18,10 @@ class SignInViewModel {
         self.view = view
     }
     
+    func checkSession() -> Bool {
+        return repository?.alreadyLogged() ?? false
+    }
+    
     func signInUserWith(email: String) {
         view?.startLoading()
         repository?.signInWith(email: email).then(handleResponse).catch(handleError).always(handleAlways)

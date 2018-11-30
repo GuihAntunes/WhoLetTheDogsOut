@@ -6,23 +6,29 @@
 //  Copyright © 2018 Guilherme Antunes. All rights reserved.
 //
 
-import Foundation
+import Promises
 
 protocol DogsListDataAccess: class {
-    
+    func getDog(for breed: String) -> Promise<Dog>
 }
 
 
 class DogsListRepository: DogsListDataAccess {
     
-    let client: APIClient
+    let service: DogsListService
     
-    init(apiClient: APIClient = APIClient()) {
-        self.client = apiClient
+    init(service: DogsListService = DogsListService()) {
+        self.service = service
     }
     
-    func getDogPhotos() {
-        
+    func getDog(for breed: String) -> Promise<Dog> {
+        return Promise<Dog> { fulfill, reject in
+            self.service.getDog(for: breed).then({ (dog) in
+                fulfill(dog)
+            }).catch({ (error) in
+                reject(error)
+            })
+        }
     }
     
 }

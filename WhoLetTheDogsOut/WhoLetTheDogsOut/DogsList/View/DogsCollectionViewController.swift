@@ -19,10 +19,15 @@ class DogsCollectionViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureCollectionView()
+        viewModel.loadDogsList()
     }
     
     // MARK: - General Methods
+    func configureCollectionView() {
+        dogsCollectionView?.dataSource = self
+        dogsCollectionView?.delegate = self
+    }
     
     // MARK: - Actions
 

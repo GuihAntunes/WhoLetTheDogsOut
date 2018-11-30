@@ -19,24 +19,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="daR-Ot-qUT">
-                                <rect key="frame" x="0.0" y="140" width="375" height="672"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ttl-ud-ye1">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ttl-ud-ye1">
                                     <size key="itemSize" width="118" height="118"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="121"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DogCollectionViewCell" id="6HH-gz-e8y" customClass="DogCollectionViewCell" customModule="WhoLetTheDogsOut" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="0.0" width="118" height="118"/>
+                                        <rect key="frame" x="0.0" y="121" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G1N-Ym-7gi">
-                                                    <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="G1N-Ym-7gi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="EG4-OT-tX2"/>
+                                                        <constraint firstAttribute="height" constant="100" id="hmA-yG-voE"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -46,23 +50,40 @@
                                             <constraint firstItem="G1N-Ym-7gi" firstAttribute="leading" secondItem="6HH-gz-e8y" secondAttribute="leading" id="iy2-x4-o9E"/>
                                             <constraint firstItem="G1N-Ym-7gi" firstAttribute="top" secondItem="6HH-gz-e8y" secondAttribute="top" id="w8s-kN-OQ3"/>
                                         </constraints>
+                                        <size key="customSize" width="100" height="100"/>
                                         <connections>
                                             <outlet property="dogImageView" destination="G1N-Ym-7gi" id="3pE-LS-Vc6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g56-Lk-89v">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="638"/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="DogSectionHeaderView" id="Lwu-fk-l0a" customClass="DogSectionHeaderView" customModule="WhoLetTheDogsOut" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="121"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbV-uk-jTg">
+                                            <rect key="frame" x="8" y="27.666666666666664" width="351" height="65.666666666666686"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="48"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gbV-uk-jTg" secondAttribute="trailing" constant="8" id="dfd-QE-Egf"/>
+                                        <constraint firstItem="gbV-uk-jTg" firstAttribute="centerY" secondItem="Lwu-fk-l0a" secondAttribute="centerY" id="j0M-xj-ePg"/>
+                                        <constraint firstItem="gbV-uk-jTg" firstAttribute="leading" secondItem="Lwu-fk-l0a" secondAttribute="leading" constant="8" id="rKn-1J-Q2Q"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="headerTitle" destination="gbV-uk-jTg" id="5kH-TL-aPh"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="daR-Ot-qUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Meu-iX-IQo"/>
-                            <constraint firstItem="daR-Ot-qUT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nme-tP-NAF"/>
-                            <constraint firstItem="daR-Ot-qUT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OLs-9M-D5k"/>
-                            <constraint firstAttribute="bottom" secondItem="daR-Ot-qUT" secondAttribute="bottom" id="WKw-ox-5AZ"/>
+                            <constraint firstItem="daR-Ot-qUT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3YT-iA-dtI"/>
+                            <constraint firstAttribute="bottom" secondItem="daR-Ot-qUT" secondAttribute="bottom" id="C1L-mz-D6j"/>
+                            <constraint firstItem="daR-Ot-qUT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kot-Px-teL"/>
+                            <constraint firstItem="daR-Ot-qUT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uGc-jN-iYO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -70,21 +91,54 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="Lrp-RZ-Dsi"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="dogsCollectionView" destination="daR-Ot-qUT" id="mHk-Nq-VYH"/>
+                        <outlet property="dogsCollectionView" destination="daR-Ot-qUT" id="daO-gH-kZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="770.39999999999998" y="132.26600985221674"/>
         </scene>
+        <!--Big Photo View Controller-->
+        <scene sceneID="l06-e0-BO1">
+            <objects>
+                <viewController id="gP6-Oh-ihc" customClass="BigPhotoViewController" customModule="WhoLetTheDogsOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ydw-UO-mu7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-wH-exH">
+                                <rect key="frame" x="16" y="234.66666666666663" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1NA-wH-exH" secondAttribute="height" id="HBx-ol-1fk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1NA-wH-exH" firstAttribute="leading" secondItem="78v-U3-HVQ" secondAttribute="leading" constant="16" id="ayb-TA-26Y"/>
+                            <constraint firstItem="1NA-wH-exH" firstAttribute="centerY" secondItem="Ydw-UO-mu7" secondAttribute="centerY" id="c3v-zg-QPw"/>
+                            <constraint firstItem="1NA-wH-exH" firstAttribute="centerX" secondItem="Ydw-UO-mu7" secondAttribute="centerX" id="sbR-4I-NmL"/>
+                            <constraint firstItem="78v-U3-HVQ" firstAttribute="trailing" secondItem="1NA-wH-exH" secondAttribute="trailing" constant="16" id="vh6-vm-bjk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="78v-U3-HVQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="1NA-wH-exH" id="ImN-yR-r6s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vlk-kv-mbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="132"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="nie-je-zJL">
             <objects>
                 <navigationController restorationIdentifier="DogsNavigationCollectionViewController" storyboardIdentifier="DogsNavigationCollectionViewController" automaticallyAdjustsScrollViewInsets="NO" id="lhc-rx-cM5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="aYr-JZ-Yj1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="aYr-JZ-Yj1">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -142,6 +196,7 @@
                     <connections>
                         <outlet property="confirmButton" destination="631-sw-IdD" id="qck-EO-Ilm"/>
                         <outlet property="emailTextField" destination="oGh-kc-tL1" id="Yn6-0y-VNV"/>
+                        <segue destination="lhc-rx-cM5" kind="show" identifier="ShowDogsListSegue" id="NWf-XI-IRA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrP-4k-EVL" userLabel="First Responder" sceneMemberID="firstResponder"/>

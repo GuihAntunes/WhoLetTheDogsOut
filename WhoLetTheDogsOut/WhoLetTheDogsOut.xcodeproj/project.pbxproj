@@ -38,6 +38,9 @@
 		0EDB8CC321AF318A005F8A13 /* SignInViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC221AF318A005F8A13 /* SignInViewController+View.swift */; };
 		0EDB8CC521AF35AB005F8A13 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */; };
 		0EDB8CC721AF3874005F8A13 /* SignInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC621AF3874005F8A13 /* SignInViewModelTests.swift */; };
+		0EDB8CC921B0AE85005F8A13 /* DogsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CC821B0AE85005F8A13 /* DogsListService.swift */; };
+		0EDB8CD021B0D3DF005F8A13 /* BigPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CCF21B0D3DF005F8A13 /* BigPhotoViewController.swift */; };
+		0EDB8CD221B0DAA6005F8A13 /* DogSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB8CD121B0DAA6005F8A13 /* DogSectionHeaderView.swift */; };
 		27D8FB95CA8581AD9D4B8699 /* Pods_WhoLetTheDogsOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5617D283015F07C1B3F7D7C0 /* Pods_WhoLetTheDogsOut.framework */; };
 		381A3CDA3BC0B60A4E585396 /* Pods_WhoLetTheDogsOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6728CF32DA33E9DBDA9E483 /* Pods_WhoLetTheDogsOutTests.framework */; };
 		8330A618D8D15675EAC84F3D /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B60BFE490B1F0A38F0A80D9 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework */; };
@@ -100,6 +103,9 @@
 		0EDB8CC221AF318A005F8A13 /* SignInViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+View.swift"; sourceTree = "<group>"; };
 		0EDB8CC421AF35AB005F8A13 /* UserDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		0EDB8CC621AF3874005F8A13 /* SignInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModelTests.swift; sourceTree = "<group>"; };
+		0EDB8CC821B0AE85005F8A13 /* DogsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsListService.swift; sourceTree = "<group>"; };
+		0EDB8CCF21B0D3DF005F8A13 /* BigPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigPhotoViewController.swift; sourceTree = "<group>"; };
+		0EDB8CD121B0DAA6005F8A13 /* DogSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSectionHeaderView.swift; sourceTree = "<group>"; };
 		11BA0D28988FE786F5C60BBF /* Pods-WhoLetTheDogsOutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44BD33ECC78512F0078D44EB /* Pods-WhoLetTheDogsOutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoLetTheDogsOutUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoLetTheDogsOutUITests/Pods-WhoLetTheDogsOutUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B60BFE490B1F0A38F0A80D9 /* Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoLetTheDogsOut_WhoLetTheDogsOutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +178,7 @@
 		0E0BB8C921AB9CC4001F70FF /* WhoLetTheDogsOut */ = {
 			isa = PBXGroup;
 			children = (
+				0EDB8CCE21B0D3C3005F8A13 /* BigPhoto */,
 				0EDB8CC021AF30F1005F8A13 /* Model */,
 				0EDB8CAF21ADF9B9005F8A13 /* SignIn */,
 				0EDB8C9D21AC8D5D005F8A13 /* Common */,
@@ -220,6 +227,7 @@
 				0EDB8C8E21ABBCE2005F8A13 /* DogsCollectionViewController+List.swift */,
 				0EDB8C9121ABC164005F8A13 /* DogCollectionViewCell.swift */,
 				0EDB8C9B21ABCF87005F8A13 /* DogsCollectionViewController+View.swift */,
+				0EDB8CD121B0DAA6005F8A13 /* DogSectionHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +265,7 @@
 			children = (
 				0EDB8CA321AC9286005F8A13 /* DogsListRepository.swift */,
 				0EDB8CA521AC9302005F8A13 /* DogsListRouter.swift */,
+				0EDB8CC821B0AE85005F8A13 /* DogsListService.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -326,6 +335,14 @@
 				0EDB8CBC21AF2C63005F8A13 /* SignInRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		0EDB8CCE21B0D3C3005F8A13 /* BigPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				0EDB8CCF21B0D3DF005F8A13 /* BigPhotoViewController.swift */,
+			);
+			path = BigPhoto;
 			sourceTree = "<group>";
 		};
 		A3146122A4FA7CFF4E6933E0 /* Frameworks */ = {
@@ -610,10 +627,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDB8CD221B0DAA6005F8A13 /* DogSectionHeaderView.swift in Sources */,
 				0EDB8CA121AC90B4005F8A13 /* Reachability+isConnected.swift in Sources */,
 				0EDB8C9C21ABCF87005F8A13 /* DogsCollectionViewController+View.swift in Sources */,
+				0EDB8CD021B0D3DF005F8A13 /* BigPhotoViewController.swift in Sources */,
 				0EDB8C9A21ABCCF3005F8A13 /* DogsListViewModel.swift in Sources */,
 				0EDB8CB321AE1D80005F8A13 /* SignInViewModel.swift in Sources */,
+				0EDB8CC921B0AE85005F8A13 /* DogsListService.swift in Sources */,
 				0EDB8C8D21ABBB13005F8A13 /* DogsCollectionViewController.swift in Sources */,
 				0EDB8CA421AC9286005F8A13 /* DogsListRepository.swift in Sources */,
 				0EDB8CB521AE1EFF005F8A13 /* SignInRouter.swift in Sources */,

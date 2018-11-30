@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import Reachability
 
 class DogCollectionViewCell: UICollectionViewCell, Identifiable {
     
@@ -21,15 +22,29 @@ class DogCollectionViewCell: UICollectionViewCell, Identifiable {
         }
     }
     
+    let imageCache = AutoPurgingImageCache()
+
     // MARK: - Methods
     func setImageUrlString(_ string: String) {
         imageUrlString = string
     }
     
     func downloadImage() {
-        if let url = URL(string: imageUrlString) {
-            dogImageView?.af_setImage(withURL: url, progressQueue: .global(), imageTransition: UIImageView.ImageTransition.flipFromLeft(0.3), runImageTransitionIfCached: false)
+        guard Reachability()?.isConnected ?? false else {
+            dogImageView?.image = imageCache.image(withIdentifier: imageUrlString)
+            return
         }
+        
+        if let url = URL(string: imageUrlString) {
+            dogImageView?.af_setImage(withURL: url, progressQueue: .global(), imageTransition: .noTransition, runImageTransitionIfCached: false, completion: { (image) in
+                self.imageCache.add(image.value ?? UIImage(), withIdentifier: self.imageUrlString)
+                self.dogImageView?.contentMode = .scaleAspectFill
+            })
+        }
+    }
+    
+    override func prepareForReuse() {
+        dogImageView?.image = UIImage()
     }
     
 }

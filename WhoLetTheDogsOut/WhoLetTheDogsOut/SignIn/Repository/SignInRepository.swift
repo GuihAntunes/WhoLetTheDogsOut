@@ -10,6 +10,7 @@ import Promises
 
 protocol SignInDataAccess: class {
     func signInWith(email: String) -> Promise<Bool>
+    func alreadyLogged() -> Bool
 }
 
 class SignInRepository: SignInDataAccess {
@@ -20,6 +21,10 @@ class SignInRepository: SignInDataAccess {
     init(remoteRepository: SignInService = SignInService(), localRepository: UserDataManager = UserDataManager()) {
         self.remoteRepository = remoteRepository
         self.localRepository = localRepository
+    }
+    
+    func alreadyLogged() -> Bool {
+        return localRepository.isLoggedIn
     }
     
     func signInWith(email: String) -> Promise<Bool> {

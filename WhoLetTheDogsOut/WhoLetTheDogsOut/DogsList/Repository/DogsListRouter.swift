@@ -10,7 +10,7 @@ import Alamofire
 
 enum DogsListRouter: CustomRouter {
     
-    case feed()
+    case feed(String)
     
     /**
      * Path according to route */
@@ -33,7 +33,15 @@ enum DogsListRouter: CustomRouter {
     // MARK: - URLRequestConvertible
     
     func asURLRequest() throws -> URLRequest {
-        return try baseURLRequest()
+        var urlRequest = try baseURLRequest()
+        
+        switch self {
+        case .feed(let breed):
+            let queryString = try URLEncoding(destination: .queryString).encode(urlRequest, with: ["category":breed])
+            urlRequest.url = queryString.url
+        }
+        
+        return urlRequest
     }
     
 }

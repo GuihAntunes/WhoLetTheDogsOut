@@ -25,7 +25,7 @@ class UserDataManager {
     }
     
     var isLoggedIn: Bool {
-        return getValueString(for: "Token")?.isEmpty ?? false
+        return !(getValueString(for: "Token")?.isEmpty ?? true)
     }
     
 }

@@ -25,7 +25,9 @@ extension SignInViewController: SignInViewControllerPresentable {
     }
     
     func presentHomeScreen() {
-        print("presented")
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "ShowDogsListSegue", sender: self)
+        }
     }
     
     func presentAlertWith(message: String) {

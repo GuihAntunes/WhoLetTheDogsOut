@@ -29,6 +29,13 @@ class SignInViewController: UIViewController {
         configureButton()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if viewModel.checkSession() {
+            presentHomeScreen()
+        }
+    }
+    
     // MARK: - General Methods
     func configureTextField() {
         emailTextField?.attributedPlaceholder = NSAttributedString( string: "E-mail", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
