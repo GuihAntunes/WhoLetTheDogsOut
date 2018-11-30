@@ -14,6 +14,10 @@ import Nimble
 class SignInViewModelTests: QuickSpec {
     
     class SignInDataAccessDummy: SignInDataAccess {
+        func alreadyLogged() -> Bool {
+            return true
+        }
+        
         var signInCalled = false
         var emailInserted: String?
         var shouldReject = false
